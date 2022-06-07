@@ -77,6 +77,9 @@ p {
   line-height: 18px;
   color: #777;
 }
+.text{
+  width: 200px;
+}
 .more {
   display: none;
 }
