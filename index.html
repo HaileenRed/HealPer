@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial scale=1">
+  <title>Health Perception</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+
+<body>
+  <section id="header">
+    <div class="container">
+      <img src="images/logo4.png" class="logo">
+      <div class="header-text"></div>
+      <h1>Do not let illness<br>make you realize the value of health</h1>
+      <span class="square"></span>
+      <p class="text">We have been living in a global health crisis for 2 years and because of that our <span
+          class="dot">...</span>
+        <span class="more">
+          health practitioners have done their best in searching for cures and turn out discover vaccines but somehow
+          people still either lose their lives or their decent health,
+          now on this search we have uncovered that by using online technology,
+          not only would it be economically beneficial but also highly advised by some clinician, and so this website is
+          developed, it's expeditious, ingenious and an inadequate way of assisting you in your daily life,
+          not only that but we also made this financially possible for anyone to operate.</span>
+      </p>
+      <button class="readmore-btn">Read More</button>
+      <div class="line">
+        <span class="line-1"></span><br>
+        <span class="line-2"></span><br>
+        <span class="line-3"></span>
+      </div>
+    </div>
+
+  </section>
+
+  <nav id="sideNav">
+    <ul>
+      <li><a href="#header">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#Why">WHY?</a></li>
+      <li><a href="#sympcheck">SYMPTOM CHECKER</a></li>
+    </ul>
+  </nav>
+  <img src="images/rename1.png" id="menuBtn">
+
+  <!--about-->
+
+  <section id="about">
+    <div class="about-left-col">
+      <img src="images/about.png">
+    </div>
+    <div class="about-right-col">
+      <div class="about-text">
+        <h1>About</h1>
+        <p class="text">This website is online Health management to authenticate symptoms and examination that the user
+          provides by typing at the tab on your Pc or Phone screen.</p><br>
+        <p>And for the reason that we are still currently in a pandemic it would be wiser to keep a distance from people
+          that might have the virus, which would surely endanger our health in more ways than one, hence why this
+          website is created, not only would it assist a great number of people but also would be a risk-free means to
+          know your health whether it is in your own home or a working environment.</p><br></br>
+        <h2>"The greatest wealth is health"</h2>
+        <h3>- Virgil</h3>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    var menuBtn = document.getElementById("menuBtn");
+    var sideNav = document.getElementById("sideNav");
+
+    sideNav.style.right = "-250px";
+    menuBtn.onclick = function () {
+      if (sideNav.style.right == "-250px") {
+        sideNav.style.right = "0";
+      }
+      else {
+        sideNav.style.right = "-250px";
+      }
+    } 
+  </script>
+
+
+  <!--WHY?-->
+  <section id="Why">
+    <div class="why-row">
+      <div class="why-col">
+        <img src="images/pic-3.png">
+        <b>
+          <H4>Promptly and efficient</H4>
+        </b>
+        <p>Get your health answers much faster and more efficiently.</p>
+      </div>
+
+      <div class="why-col">
+        <img src="images/pic-1.png" />
+        <h4>Gain Knowledge</h4>
+        </>
+        <p>Be aware of your condition and also gain knowledge concerning your health at the same time.</p>
+      </div>
+
+      <div class="why-col">
+        <img src="images/pic-5.png" />
+        <h4>Free</h4>
+        <p>There is no stake in losing money,
+          because this website is free.</p>
+      </div>
+  </section>
+
+  <!--SYMPTOM CHECKER -->
+  <section id="sympcheck">
+    <div>
+      <h1>Check your symptoms</h1>
+      <div class="checkSymtoms">
+        <div class="select">
+          <select name="diseases" id="diseases">
+            <option>eye irritation</option>
+            <option>runny nose</option>
+            <option>stuffy nose</option>
+            <option>puffy, watery eyes</option>
+            <option>sneezing</option>
+            <option>inflamed, itchy nose and throat</option>
+            <option>fever (100° F)</option>
+            <option>headache</option>
+            <option>more intense pain and fatigue</option>
+            <option>more severe, often dry cough</option>
+            <option>redness, itching, tearing, burning sensation</option>
+            <option>pus-like discharge and/or crusting of the eyelids</option>
+            <option>watery, loose stools</option>
+            <option>frequent bowel movements</option>
+            <option>cramping or pain in the abdomen, nausea, bloating</option>
+            <option>possibly fever or bloody stools, depending on the cause</option>
+            <option>symptoms of a migraine</option>
+            <option>symptoms of a tension-type headache</option>
+            <option>nap frequently</option>
+            <option>swollen lymph glands and spleen</option>
+            <option>sore throat</option>
+            <option>fever</option>
+            <option>loss of appetite</option>
+            <option>muscle aches</option>
+          </select>
+          <button id="addSymptom">Add Symptom</button>
+        </div>
+        <div id="symtoms">
+          <ul id="symptomList"></ul>
+          <button id="showResult">Show result</button>
+        </div>
+        <div id="resultContainer">
+          <ul id="result"></ul>
+          <button id="clear">Clear</button>
+        </div>
+        <div id="showMore">
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+
+  </section>
+  <script src="./app.js"></script>
+  <script src="./diseases.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script>
+  <script src="multi-input.js"></script>
+</body>
+
+</html>
