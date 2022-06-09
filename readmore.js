@@ -12,7 +12,7 @@
 
 // let diseases = [
 //   {
-//     Disease: 'Allergies',
+//     Disease: 'Allergy',
 //     Symtomps: [
 //       'eye irritation',
 //       'runny nose',
@@ -23,9 +23,39 @@
 //     ],
 //   },
 //   {
+//      Disease: 'Alkaptonuria',
+//       Symtomps: [
+//      'dark spots in the sclera (white) of your eyes',
+//      'thickened and darkened cartilage in your ears',
+//      'blue speckled discoloration of your skin, particularly around sweat glands',
+//      'dark-colored sweat or sweat stains',
+//      'black earwax',
+//     ],
+//   },
+//   {
+//      Disease: 'Aortic stenosis',
+//        Symtomps: [
+//      'Chest pain',
+//      'Rapid or fluttering heartbeat',
+//      'Trouble breathing or feeling short of breath',
+//      'Feeling dizzy or light-headed and even fainting',
+//      'Difficulty walking short distances',
+//      'Swollen ankles or feet',
+//      'Difficulty sleeping or needing to sleep sitting up'
+//    ],
+//   },
+//   {
+//     Disease: 'Abdominal Aortic Aneurysm',
+//     Symtomps: [
+//      'back or flank pain',
+//      'severe or worsening abdominal pain',
+//      'feeling a pulse near the bellybutton',
+//     ],
+//   },
+//   {
 //     Disease: 'Cold and Flu',
 //     Symtomps: [
-//       'fever (100° F)',
+//       'fever',
 //       'headache',
 //       'more intense pain and fatigue',
 //       'more severe, often dry cough',
@@ -39,6 +69,13 @@
 //     ],
 //   },
 //   {
+//      Disease: 'Migraine',
+//      Symtomps: [
+//        'sensitive to light or sound', 
+//        'feeling you need to vomit',
+//     ],
+//   },
+//   {
 //     Disease: 'Diarrhea',
 //     Symtomps: [
 //       'watery, loose stools',
@@ -49,7 +86,8 @@
 //   },
 //   {
 //     Disease: 'Headaches',
-//     Symtomps: ['symptoms of a migraine', 'symptoms of a tension-type headache'],
+//     Symtomps: ['redness, itching, tearing, burning sensation in the eyes',
+//      'pus-like discharge and/or crusting of the eyelids'],
 //   },
 //   {
 //     Disease: 'Mononucleosis',
