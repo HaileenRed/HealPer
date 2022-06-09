@@ -43,6 +43,9 @@ option {
   margin-right: 100px;
   margin-left: 100px;
 }
+.container > p{
+  width: 400px;
+}
 .logo {
   padding-top: 15px;
   height: 60px;
