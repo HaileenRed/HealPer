@@ -131,6 +131,8 @@ clearBtn.addEventListener('click', () => {
     child = result.lastElementChild
   }
 
+  diseases = diseaseCopy.map((e) => e)
+  
   var chilren = showMore.lastElementChild
   while (chilren) {
     showMore.removeChild(chilren)
