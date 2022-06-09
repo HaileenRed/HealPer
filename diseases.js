@@ -15,7 +15,7 @@ let diseases = [
     Disease: 'Cold and Flu',
     Link: 'https://www.google.com/search?q=cold+and+flu&sxsrf=ALiCzsZKzsJKS_3NpnTyU3gDTKdaqRIBNQ%3A1654784306435&source=hp&ei=MgGiYp33F5uB1e8P0P-08As&iflsig=AJiK0e8AAAAAYqIPQsN16Cj_K24QVZ_FFAfeyFqRd0Ro&ved=0ahUKEwid2Iz2x6D4AhWbQPUHHdA_Db4Q4dUDCAc&uact=5&oq=cold+and+flu&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgjEOoCECc6CgguEMcBEKMCECc6BAgAEEM6CAgAEIAEELEDOgoIABCABBCHAhAUOgcIABCxAxBDOgsIABCABBCxAxCDAToICC4QgAQQsQNQzypY4zxgvEFoAXAAeACAAYABiAGjCpIBAzMuOZgBAKABAbABCg&sclient=gws-wiz',
     Symtomps: [
-      'fever (100° F)',
+      'fever',
       'headache',
       'more intense pain and fatigue',
       'more severe, often dry cough',
@@ -54,6 +54,47 @@ let diseases = [
       'fever',
       'loss of appetite',
       'muscle aches',
+    ],
+  },
+  {
+    Disease: 'Heart Attack',
+    Link: 'https://www.google.com/search?q=heart+attack&bih=663&biw=1366&hl=en&sxsrf=ALiCzsYf51oo57_wPhRTGx30UX1XrZ15Lg%3A1654785825573&ei=IQeiYsbCIpL2-QaQg5mgBw&ved=0ahUKEwiG17_KzaD4AhUSe94KHZBBBnQQ4dUDCA4&uact=5&oq=heart+attack&gs_lcp=Cgdnd3Mtd2l6EAMyBwgAELEDEEMyDQgAEIAEEIcCELEDEBQyBAgAEEMyCggAEIAEEIcCEBQyCAgAEIAEELEDMggIABCABBCxAzIICAAQgAQQsQMyBQgAEIAEMgUIABCABDIFCAAQgAQ6BAgjECc6CAgAELEDEIMBOg4ILhCxAxCDARDHARCjAjoKCC4QsQMQ1AIQQzoHCC4Q1AIQQzoHCAAQgAQQCkoECEEYAEoECEYYAFAAWP8LYLgOaABwAXgAgAHcAYgBuAuSAQU1LjUuMpgBAKABAcABAQ&sclient=gws-wiz',
+    Symtomps: [
+      'pain',
+      'pressure',
+      'shortness of breath',
+      'lightheadedness',
+      'nausea',
+    ],
+  },
+  {
+    Disease: 'Stroke',
+    Link: 'https://www.google.com/search?q=Stroke&bih=663&biw=1366&hl=en&sxsrf=ALiCzsbB1_r1EeOyHoQxPJniE47dGUFTaQ%3A1654786747609&ei=uwqiYsXoJJSDoATZvZqwDA&ved=0ahUKEwiFspSC0aD4AhWUAYgKHdmeBsYQ4dUDCA4&uact=5&oq=Stroke&gs_lcp=Cgdnd3Mtd2l6EAMyBwgAELEDEEMyBwgAELEDEEMyCggAELEDEIMBEEMyBAgAEEMyBwgAELEDEEMyBwgAELEDEEMyBAgAEEMyBAgAEEMyBAgAEEMyBAgAEENKBAhBGABKBAhGGABQAFgAYO0GaABwAXgAgAGdAogBnQKSAQMyLTGYAQCgAQKgAQHAAQE&sclient=gws-wiz',
+    Symtomps: [
+      'facial drooping',
+      'arm weakness',
+      'difficulty with speech',
+      'rapidly developing dizziness',
+      'loss of vision',
+      'confusion',
+    ],
+  },
+  {
+    Disease: 'Breast Problems',
+    Link: 'https://www.google.com/search?q=Breast+Problems&bih=663&biw=1366&hl=en&sxsrf=ALiCzsbCOLGuxXo55J5OCgYWb_9UfA8D8g%3A1654787042390&ei=4guiYouzF5Sx2roP_fGDkA4&ved=0ahUKEwiLrNyO0qD4AhWUmFYBHf34AOIQ4dUDCA4&uact=5&oq=Breast+Problems&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgoIABCABBCHAhAUMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgARKBAhBGABKBAhGGABQAFgAYMAHaABwAXgAgAGiAogBogKSAQMyLTGYAQCgAQKgAQHAAQE&sclient=gws-wiz',
+    Symtomps: [
+      'nipple discharge',
+      'unusual breast tenderness',
+      'nipple skin changes',
+    ],
+  },
+  {
+    Disease: 'Skin Problems',
+    Link: 'https://www.google.com/search?q=Skin+Problems&bih=663&biw=1366&hl=en&sxsrf=ALiCzsZEMbhQQpf_6hUkk5Q6aLywFlUaBQ%3A1654787452206&ei=fA2iYriQDMXN2roPr8WqkA4&ved=0ahUKEwi4vpHS06D4AhXFplYBHa-iCuIQ4dUDCA4&uact=5&oq=Skin+Problems&gs_lcp=Cgdnd3Mtd2l6EAMyCAgAELEDEJECMgUIABCRAjIECAAQQzIFCAAQgAQyBQgAEIAEMgQIABBDMgUIABCABDIECAAQQzIFCAAQgAQyBQgAEIAESgQIQRgASgQIRhgAUABYAGDtBWgAcAF4AIABpwKIAacCkgEDMi0xmAEAoAECoAEBwAEB&sclient=gws-wiz',
+    Symtomps: [
+      'frequent flushing and redness of the face and neck',
+      'jaundice',
+      'new growths or moles',
     ],
   },
 ]
