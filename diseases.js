@@ -98,3 +98,5 @@ let diseases = [
     ],
   },
 ]
+
+let diseaseCopy = diseases.map((e) => e)
