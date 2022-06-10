@@ -1,6 +1,6 @@
 let diseases = [
   {
-    Disease: 'Allergy',
+    Disease: 'Allergies',
     Link: 'https://www.google.com/search?q=allergies&sxsrf=ALiCzsbTEGFJuFs7p0RJwE-OuUBvCjAPDw%3A1654783112379&ei=iPyhYtvhFtHv-QbQ1p7QCw&ved=0ahUKEwjbxd-8w6D4AhXRd94KHVCrB7oQ4dUDCA4&uact=5&oq=allergies&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyDQgAEIAEEIcCELEDEBQyBAgAEEMyBQgAEIAEMgoIABCABBCHAhAUMgUIABCABDILCAAQgAQQsQMQgwEyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgjEOoCECc6BQgAEJECOggIABCABBCxAzoRCC4QgAQQsQMQgwEQxwEQrwE6CwguEIAEELEDEIMBOgcIABCxAxBDOgoILhDHARCjAhBDOgoIABCxAxCDARBDOgcILhDUAhBDOggILhCABBCxAzoICAAQsQMQgwE6CwguEIAEEMcBEK8BOgoILhDHARDRAxBDOggIABCxAxCRAjoHCAAQyQMQQ0oECEEYAEoECEYYAFAAWOzEAWCByQFoB3ABeACAAcgBiAHtC5IBBTguNS4xmAEAoAEBsAEKwAEB&sclient=gws-wiz',
     Symtomps: [
       'eye irritation',
@@ -11,161 +11,7 @@ let diseases = [
       'inflamed, itchy nose and throat',
     ],
   },
-  { 
-   Disease: 'Achalasia g',
-   Link: 'https://www.google.com/search?q=achalasia&rlz=1C1BNSD_enPH986PH987&oq=achalasia&aqs=chrome..69i57j69i59j0i131i433i512j0i512l3j69i60l2.4419j0j7&sourceid=chrome&ie=UTF-8', 
-   Symtomps: [
-    'trouble swallowing food (dysphagia)',
-    'food or liquid flowing back up into the throat (regurgitation)', 
-    'waking up at night coughing or choking due to regurgitation',
-    'chest pain',
-    'trouble burping',
-    'hiccups', 
-    'weight loss due to reduced intake of food'.
-    ],
-  }, 
-  { 
-  Disease: 'Addison Disease (Adrenal Insufficiency)',
-  Link: 'https://www.google.com/search?q=addison+disease&rlz=1C1BNSD_enPH986PH987&sxsrf=ALiCzsYT-bAvuf1Pc31K8WgKQKlYsVhfWQ%3A1654828219572&ei=u6yiYu7OIrqcseMP0siJuAY&oq=addison+&gs_lcp=Cgdnd3Mtd2l6EAEYADIHCAAQsQMQQzIICC4QgAQQsQMyCwguEIAEELEDEIMBMgUIABCABDIFCAAQgAQyBQgAEIAEMggIABCABBCxAzIFCAAQgAQyBQgAEIAEMgUILhCABDoHCCMQsAMQJzoECCMQJzoFCAAQkQI6CwgAEIAEELEDEIMBOgQIABBDOhAIABCABBCHAhCxAxCDARAUOgcIIxDqAhAnOg0ILhDHARCjAhDqAhAnOggIABCxAxCDAToQCC4QgAQQxwEQ0QMQ1AIQCjoLCC4QgAQQsQMQ1AJKBAhBGABKBAhGGABQ2gRY3CVg6C9oAnABeAGAAa8BiAGKEpIBBDAuMTaYAQCgAQGwAQrIAQLAAQE&sclient=gws-wiz', 
-  Symtomps: [ 
-  'Depression',
-  'Diarrhea',
-  'Fatigue',
-  'Hyperpigmentation of Skin (Skin Darkening)', 
-  'Irregular Menstrual Periods',
-  'Irritability',
-  'Loss of Appetite',
-  'Low Blood Pressure',
-  'Muscle Weakness',
-  'Feeling like you need to vomit',
-  'Salt Cravings',
-  'Vomiting',
-  'Weight Loss',
-  ],
- },
- {
- 
- Disease: 'Alkapeonuria',
- Link: 'https://www.google.com/search?q=Alkapeonuria&rlz=1C1BNSD_enPH986PH987&sxsrf=ALiCzsZMUQHP8ONZyZMERA1HYUUv0LH-gg%3A1654828537162&ei=-a2iYsO-CaOcseMPnKW7kAE&ved=0ahUKEwiDn_zY7KH4AhUjTmwGHZzSDhIQ4dUDCA4&uact=5&oq=Alkapeonuria&gs_lcp=Cgdnd3Mtd2l6EAMyBwgjELECECcyBwgjELECECcyBAgAEEMyBAgAEAoyBAgAEAoyBAgAEAoyBAgAEAoyBAgAEAoyBAgAEAoyBAgAEApKBAhBGABKBAhGGABQAFgAYJkGaABwAXgAgAHvAYgB7wGSAQMyLTGYAQCgAQKgAQHAAQE&sclient=gws-wiz',
- Symtomps: ['Discoloration of the Earwax',
-  'Heart Problems',
-  'Kidney Stones',
-  'Ochronosis (Bluish-Black Pigmentation in Connective Tissue) * Prostate Stones',
-  'Urine That Turns Black When Exposed to Air',
- ],
- },
- {
-  Disease:'Aortic Stenosis',
-  Link: 'https://www.google.com/search?q=Aortic+Stenosis&rlz=1C1BNSD_enPH986PH987&sxsrf=ALiCzsb0pwb6TKhDEtfAk68Ap0Wi7q0LIA%3A1654828996547&ei=xK-iYo2BIauI4-EP29C8yA8&ved=0ahUKEwiN84K07qH4AhUrxDgGHVsoD_kQ4dUDCA4&uact=5&oq=Aortic+Stenosis&gs_lcp=Cgdnd3Mtd2l6EAMyCAgAEIAEELEDMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgcIIxDqAhAnOg0ILhDHARCjAhDqAhAnSgQIQRgASgQIRhgAUABYuQRgiA5oAXABeACAAb0BiAG9AZIBAzAuMZgBAKABAaABArABCsABAQ&sclient=gws-wiz',
-  Symtomps: [
-   'Abnormal Heart Rhythms',
-   'Chest Pain',
-  'Fainting',
-  'Fatigue',
-  'Heart Murmur',
-   'Inability to Exercise',
-  'Lightheadedness',
- 'Shortness of Breath',
-    ],
- },
- { 
-   Disease: 'ARDS (Acute Respiratory Distress Syndrome)',
-   Link: 'https://www.google.com/search?q=%27ARDS+%28Acute+Respiratory+Distress+Syndrome&rlz=1C1BNSD_enPH986PH987&sxsrf=ALiCzsYxK5k4ZEQcQIESXL23FUbTzTmCug%3A1654830317401&ei=7bSiYqSPGM7gz7sPgJSIoAw&ved=0ahUKEwjkue2p86H4AhVO8HMBHQAKAsQQ4dUDCA4&uact=5&oq=%27ARDS+%28Acute+Respiratory+Distress+Syndrome&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBggAEB4QFjIGCAAQHhAWMggIABAeEA8QFjIGCAAQHhAWMgYIABAeEBYyBggAEB4QFjIGCAAQHhAWMgYIABAeEBYyBggAEB4QFjoHCCMQsAMQJzoECAAQQzoICAAQgAQQsQM6BwgAELEDEEM6BwgjEOoCECc6DQguEMcBEKMCEOoCECc6CAguEIAEELEDSgQIQRgASgQIRhgAUMEEWPg_YKZKaANwAXgBgAHbAYgB0RGSAQYwLjE1LjGYAQCgAQGgAQKwAQrIAQHAAQE&sclient=gws-wiz',
-   Symtomps: [
-   'Confusion',
-   'Cough',
-   'Bluish Nails or Lips', 
-   'Dizziness',
-   'Exhaustion (Tiredness)',
-   'Fever',
-   'Headache',
-   'Low Blood Pressure',
-   ],
-  },
   {
-  Disease: 'Absence seizure',
-  Link:'https://www.google.com/search?q=%27Absence+seizure&rlz=1C1BNSD_enPH986PH987&sxsrf=ALiCzsa_BJ4JenUj1x6Wn14G8VK3Sedoew%3A1654830537746&ei=ybWiYsWHLcrA3LUP3OKdmAc&ved=0ahUKEwiFkPaS9KH4AhVKILcAHVxxB3MQ4dUDCA4&uact=5&oq=%27Absence+seizure&gs_lcp=Cgdnd3Mtd2l6EAMyCAgAEIAEELEDMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgcIIxCwAxAnOgcIABBHELADOgQIIxAnOgYIABAeEBY6CAgAEB4QDxAWOgcIIxDqAhAnOg0ILhDHARCjAhDqAhAnSgQIQRgASgQIRhgAUJcEWJQ0YNc9aAJwAXgAgAGvAYgB3giSAQMwLjeYAQCgAQGgAQKwAQrIAQnAAQE&sclient=gws-wiz',
-  Symptomps: [
-  'Sudden stop in motion without falling',
-  'Lip smacking',
-  'Eyelid flutters',
-  'Chewing motions',
-  'Finger rubbing',
-  'Small movements of both hands',
-   ],
-  },
-  {
-  Disease: 'Acanthosis nigricans', 
-  Link:'https://www.google.com/search?q=Acanthosis+nigricans&rlz=1C1BNSD_enPH986PH987&sxsrf=ALiCzsZbbh3Y9HM_wuE7pMvG2d9GTqVJfA%3A1654830699842&ei=a7aiYuKKM53bz7sP-c2b-Ao&ved=0ahUKEwii7Jvg9KH4AhWd7XMBHfnmBq8Q4dUDCA4&uact=5&oq=Acanthosis+nigricans&gs_lcp=Cgdnd3Mtd2l6EAMyCAgAEIAEELEDMggIABCABBCxAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgcIABBHELADOg0IABCABBCHAhCxAxAUOgQIABBDOgQIIxAnOgcIIxDqAhAnOg0ILhDHARCjAhDqAhAnSgQIQRgASgQIRhgAUMsEWM4xYNQ3aAJwAXgBgAHMAYgBggaSAQUwLjIuMpgBAKABAaABArABCsgBCMABAQ&sclient=gws-wiz',
-  Symtomps: [
-  'Skin changes are the only signs of acanthosis nigricans',
-  'You will notice dark, thickened, velvety skin on body folds and creases', 
-  'typically in your armpits, groin and back of the neck',
-   'The affected skin changes usually appear slowly',
-   'The affected skin may also have an odor or itch',
-    ],
-  },
-  {
-  Disease: 'Achilles tendinitis', 
-  Link:'https://www.google.com/search?q=Achilles+tendinitis&rlz=1C1BNSD_enPH986PH987&sxsrf=ALiCzsY_X1Nee2VCBN2so3aKvKk0gtHuuA%3A1654830935441&ei=V7eiYs3BGsCv4-EPxMuFyAE&ved=0ahUKEwiNycfQ9aH4AhXA1zgGHcRlARkQ4dUDCA4&uact=5&oq=Achilles+tendinitis&gs_lcp=Cgdnd3Mtd2l6EAMyCAgAEIAEELEDMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgcIIxDqAhAnOg0ILhDHARCjAhDqAhAnSgQIQRgASgQIRhgAUKkOWKkOYIAWaAJwAXgAgAHTAYgB0wGSAQMyLTGYAQCgAQGgAQKwAQrAAQE&sclient=gws-wiz',
-  Symtomps: [
-  'The pain associated with Achilles tendinitis typically begins as a mild ache in the back of the leg or above the heel after running or other sports activity',
-  'Episodes of more-severe pain may occur after prolonged running, stair climbing or sprinting',
-  'You might also experience tenderness or stiffness, especially in the morning, which usually improves with mild activity',
-    ],
-  },
-  {
-Disease: 'ADHD (Hyperactive Disorder)',
-   Link:'https://www.google.com/search?rlz=1C1BNSD_enPH986PH987&sxsrf=ALiCzsZNew1TYMoQgwo8il2659_C2GcVgg:1654831185769&q=ADHD+(Hyperactivity+Disorder&spell=1&sa=X&ved=2ahUKEwjmtfbH9qH4AhUnILcAHb1UA0UQBSgAegQIARAy&biw=1366&bih=657&dpr=1',
-Symtomps: [
- 'Impulsiveness',
-'Disorganization and problems prioritizing. Poor time management skills',
-'Problems focusing on a task',
-'Trouble multitasking',
-'Excessive activity or restlessness',
-'Poor planning',
-'Low frustration tolerance',
-    ],
-  },
-  {
- Disease: 'Autism',
- Link: 'https://www.google.com/search?q=autism&rlz=1C1BNSD_enPH986PH987&oq=Autism&aqs=chrome.0.0i67i433j0i67j0i67i433j0i67l2j0i67i433j0i67j0i67i433l2j0i67.557j0j7&sourceid=chrome&ie=UTF-8',
- Symtomps: [
-'Abnormal Body Posturing or Facial Expressions. Abnormal Tone of Voice',
-'Avoidance of Eye Contact or Poor Eye Contact. Behavioral Disturbances',
-'Deficits in Language Comprehension',
-'Delay in Learning to Speak',
-'Flat or Monotonous Speech',
-'Inappropriate Social Interaction',
-    ],
-  },
-  {
-Disease: 'Achilles tendon rupture',
-Link:'https://www.google.com/search?q=Achilles+tendon+rupture&rlz=1C1BNSD_enPH986PH987&biw=1366&bih=657&sxsrf=ALiCzsbOXqIgVGNuGKtoMlNtZ7WeLAlNRg%3A1654831189955&ei=VbiiYo7oOYqa4t4PnZudgA0&ved=0ahUKEwjO5vXJ9qH4AhUKjdgFHZ1NB9AQ4dUDCA4&uact=5&oq=Achilles+tendon+rupture&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgcIIxDqAhAnSgQIQRgASgQIRhgAUIcJWIcJYJsOaAFwAXgAgAGCAYgBggGSAQMwLjGYAQCgAQGgAQKwAQrAAQE&sclient=gws-wiz',
-Symtomps: [
- 'The feeling of having been kicked in the calf',
-  'Pain, possibly severe, and swelling near the heel',
-  'An inability to bend the foot downward or "push off" the injured leg when walking',
-  'An inability to stand on the toes on the injured leg',
- 'A popping or snapping sound when the injury occurs',
-   ],
-  },
-  {
- Disease: 'Acid reflux',
-   Link:'https://www.google.com/search?q=Acid+reflux&rlz=1C1BNSD_enPH986PH987&biw=1366&bih=657&sxsrf=ALiCzsbxDKHcjsBeoIDHyIe6DWWKaqoUhg%3A1654831576847&ei=2LmiYu2tM7694-EPwtOTqAQ&ved=0ahUKEwjt-bOC-KH4AhW-3jgGHcLpBEUQ4dUDCA4&uact=5&oq=Acid+reflux&gs_lcp=Cgdnd3Mtd2l6EAMyCAgAEIAEELEDMggIABCABBCxAzIKCAAQgAQQhwIQFDIFCAAQgAQyCAgAEIAEELEDMgUIABCABDIICAAQgAQQsQMyBQgAEIAEMggIABCABBCxAzIFCAAQgAQ6BwgjEOoCECdKBAhBGABKBAhGGABQrwdYrwdgng1oAXABeACAAZUBiAGVAZIBAzAuMZgBAKABAaABArABCsABAQ&sclient=gws-wiz',
-  Symtomps: [
-  'Is not gaining weight',
-  'Consistently spits up forcefully, causing stomach contents to shoot out of his or her mouth',
-  'Spits up green or yellow fluid',
-  'Spits up blood or a material that looks like coffee grounds',
-   'Refuses food',
-  'Has blood in his or her stool',
-  'Has difficulty breathing or a chronic cough',
- 'Begins spitting up at age 6 months or older',
- 'Is unusually irritable after eating',
-    ],
-  }, 
-  {    
     Disease: 'Cold and Flu',
     Link: 'https://www.google.com/search?q=cold+and+flu&sxsrf=ALiCzsZKzsJKS_3NpnTyU3gDTKdaqRIBNQ%3A1654784306435&source=hp&ei=MgGiYp33F5uB1e8P0P-08As&iflsig=AJiK0e8AAAAAYqIPQsN16Cj_K24QVZ_FFAfeyFqRd0Ro&ved=0ahUKEwid2Iz2x6D4AhWbQPUHHdA_Db4Q4dUDCAc&uact=5&oq=cold+and+flu&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgjEOoCECc6CgguEMcBEKMCECc6BAgAEEM6CAgAEIAEELEDOgoIABCABBCHAhAUOgcIABCxAxBDOgsIABCABBCxAxCDAToICC4QgAQQsQNQzypY4zxgvEFoAXAAeACAAYABiAGjCpIBAzMuOZgBAKABAbABCg&sclient=gws-wiz',
     Symtomps: [
@@ -251,22 +97,4 @@ Symtomps: [
       'new growths or moles',
     ],
   },
-  {
-    Disease: 'Lactose intolerance',
-    Link: 'https://www.google.com/search?q=lactose+intolerance&rlz=1C1BNSD_enPH986PH987&oq=laxcto&aqs=chrome.1.69i57j0i10i433l2j46i10i433j0i10i433l2j46i10i433j46i10i131i433j0i10i433j0i10.1941j0j7&sourceid=chrome&ie=UTF-8',
-    Symtomps: [
-    'Diarrhea',
-    'Nausea and sometimes vomiting',
-    'Stomach cramps',
-    'Bloating',
-    'Laryngitis',
-    'Hoarseness',
-    'Weak voice or voice loss',
-    'Tickling sensation and rawness in your throat',
-    'Sore throat',
-    'Dry throat',
-    'Dry cough',
-   },
 ]
-
-let diseaseCopy = diseases.map((e) => e)
