@@ -5,6 +5,8 @@ const showResultBtn = document.querySelector('#showResult')
 const result = document.querySelector('#result')
 const clearBtn = document.querySelector('#clear')
 const showMore = document.querySelector('#showMore')
+const resultText = document.querySelector('#resultContainer p')
+const resultContainer = document.querySelector('#resultContainer')
 
 //Read More
 const readmoreBtn = document.querySelector('.readmore-btn')
@@ -55,89 +57,77 @@ showResultBtn.addEventListener('click', () => {
   let symptom = []
 
   if (sytompsList.children.length < 1) {
-    sytompsList.textContent = 'Select a symptom'
-    setTimeout(() => {
-      sytompsList.textContent = ''
-    }, 1000)
+    return
   }
 
-  for (let i = 0; i < sytompsList.children.length; i++) {
-    symptom.push(sytompsList.children[i].innerHTML)
+  for (let i = 0; i < sytompsList.childNodes.length; i++) {
+    symptom.push(sytompsList.childNodes[i].textContent)
   }
 
-  var child = sytompsList.lastElementChild
-  while (child) {
-    sytompsList.removeChild(child)
-    child = sytompsList.lastElementChild
-  }
-
-  for (let item in symptom) {
-    var check = diseases.find((e) => {
-      return e.Symtomps.some((e) => {
-        return e === symptom[item]
-      })
-    })
-    let match = false
-
-    if (result.children.length > 0) {
-      for (let i = 0; i < result.children.length; i++) {
-        if (result.children[i].textContent === check.Disease) {
-          match = true
-        } else {
-          match = false
-        }
-      }
-    }
-
-    let li = document.createElement('LI')
-    li.textContent = check.Disease
-
-    li.addEventListener('click', (e) => {
-      showMore.style.display = 'block'
-      const text = e.target.innerText
-      const find = diseases.find((e) => e.Disease === text)
-      if (find) {
-        const div = document.createElement('DIV')
-        const a = document.createElement('a')
-        const index = diseases.indexOf(find)
-        diseases.splice(index, 1)
-        a.textContent = find.Disease
-        a.setAttribute('href', find.Link)
-        a.setAttribute('target', '_blank')
-        div.append(a)
-
-        for (let item of find.Symtomps) {
-          const p = document.createElement('P')
-          p.textContent = item
-          div.append(p)
-        }
-
-        showMore.append(div)
-      }
+  for (let i = 0; i < symptom.length; i++) {
+    let found = diseases.find((e) => {
+      return e.Symtomps.some((e) => e === symptom[i])
     })
 
-    if (!match) {
-      result.append(li)
-    } else if (match) {
-      return
+    if (found) {
+      let match = false
+
+      if (result.children.length > 0) {
+        const diseasesTitle = document.querySelectorAll('.diseasesTitle')
+        for (let i = 0; i < diseasesTitle.length; i++) {
+          if (diseasesTitle[i].textContent == found.Disease) {
+            match = true
+          } else {
+            match = false
+          }
+        }
+      }
+
+      let li = document.createElement('LI')
+      let a = document.createElement('A')
+      a.textContent = found.Disease
+      a.classList.add('diseasesTitle')
+      a.setAttribute('href', found.Link)
+      a.setAttribute('target', '_blank')
+      li.append(a)
+
+      for (let item of found.Symtomps) {
+        let p = document.createElement('P')
+        p.textContent = item
+        li.append(p)
+      }
+
+      if (!match) {
+        result.append(li)
+      } else if (match) {
+        return
+      }
     }
   }
+  showResultBtn.disabled = true
+  showResultBtn.style.pointerEvents = 'none'
+  clearBtn.style.visibility = 'visible'
+  resultText.textContent = 'Click a Disease to know more'
+  resultContainer.style.display = 'block'
 })
 
 clearBtn.addEventListener('click', () => {
-  var child = result.lastElementChild
+  let child = result.lastElementChild
   while (child) {
     result.removeChild(child)
     child = result.lastElementChild
   }
 
-  diseases = diseaseCopy.map((e) => e)
-  
-  var chilren = showMore.lastElementChild
-  while (chilren) {
-    showMore.removeChild(chilren)
-    chilren = showMore.lastElementChild
+  let child2 = sytompsList.lastElementChild
+  while (child2) {
+    sytompsList.removeChild(child2)
+    child2 = sytompsList.lastElementChild
   }
 
-  showMore.style.display = 'none'
+  showResultBtn.disabled = false
+  showResultBtn.style.pointerEvents = 'auto'
+  clearBtn.style.visibility = 'hidden'
+  resultContainer.style.display = 'none'
+
+  alert('cleared!')
 })
