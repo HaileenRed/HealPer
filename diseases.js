@@ -1,7 +1,7 @@
 let diseases = [
   {
     Disease: 'Allergies',
-    Link: 'https://www.google.com/search?q=allergies&sxsrf=ALiCzsbTEGFJuFs7p0RJwE-OuUBvCjAPDw%3A1654783112379&ei=iPyhYtvhFtHv-QbQ1p7QCw&ved=0ahUKEwjbxd-8w6D4AhXRd94KHVCrB7oQ4dUDCA4&uact=5&oq=allergies&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyDQgAEIAEEIcCELEDEBQyBAgAEEMyBQgAEIAEMgoIABCABBCHAhAUMgUIABCABDILCAAQgAQQsQMQgwEyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgjEOoCECc6BQgAEJECOggIABCABBCxAzoRCC4QgAQQsQMQgwEQxwEQrwE6CwguEIAEELEDEIMBOgcIABCxAxBDOgoILhDHARCjAhBDOgoIABCxAxCDARBDOgcILhDUAhBDOggILhCABBCxAzoICAAQsQMQgwE6CwguEIAEEMcBEK8BOgoILhDHARDRAxBDOggIABCxAxCRAjoHCAAQyQMQQ0oECEEYAEoECEYYAFAAWOzEAWCByQFoB3ABeACAAcgBiAHtC5IBBTguNS4xmAEAoAEBsAEKwAEB&sclient=gws-wiz',
+    Link: 'https://www.mayoclinic.org/diseases-conditions/allergies/symptoms-causes/syc-20351497',
     Symtomps: [
       'eye irritation',
       'runny nose',
@@ -12,18 +12,22 @@ let diseases = [
     ],
   },
   {
-    Disease: 'Cold and Flu',
-    Link: 'https://www.google.com/search?q=cold+and+flu&sxsrf=ALiCzsZKzsJKS_3NpnTyU3gDTKdaqRIBNQ%3A1654784306435&source=hp&ei=MgGiYp33F5uB1e8P0P-08As&iflsig=AJiK0e8AAAAAYqIPQsN16Cj_K24QVZ_FFAfeyFqRd0Ro&ved=0ahUKEwid2Iz2x6D4AhWbQPUHHdA_Db4Q4dUDCAc&uact=5&oq=cold+and+flu&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgjEOoCECc6CgguEMcBEKMCECc6BAgAEEM6CAgAEIAEELEDOgoIABCABBCHAhAUOgcIABCxAxBDOgsIABCABBCxAxCDAToICC4QgAQQsQNQzypY4zxgvEFoAXAAeACAAYABiAGjCpIBAzMuOZgBAKABAbABCg&sclient=gws-wiz',
+    Disease: 'Common cold',
+    Link: 'https://www.mayoclinic.org/diseases-conditions/common-cold/symptoms-causes/syc-20351605',
     Symtomps: [
-      'fever',
-      'headache',
-      'more intense pain and fatigue',
-      'more severe, often dry cough',
+      'runny or stuffy nose',
+      'sore throat',
+      'coughing',
+      'congestion',
+      'slight body aches or a mild headache',
+      'sneezing',
+      'low-grade fever',
+      'generally feeling unwell',
     ],
   },
   {
-    Disease: 'Conjunctivitis (“pink eye“)',
-    Link: 'https://www.google.com/search?q=Conjunctivitis+%28%E2%80%9Cpink+eye%E2%80%9C%29&sxsrf=ALiCzsZDBe22YPMfWMWlcjr8kPNx7nh89Q%3A1654784316668&ei=PAGiYo-gKPnu2roPkaeMkA4&ved=0ahUKEwiPrv_6x6D4AhV5t1YBHZETA-IQ4dUDCA4&uact=5&oq=Conjunctivitis+%28%E2%80%9Cpink+eye%E2%80%9C%29&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgYIABAeEBYyBggAEB4QFjIGCAAQHhAWMgYIABAeEBYyBggAEB4QFjIGCAAQHhAWMgYIABAeEBYyBggAEB4QFjIGCAAQHhAWOgcIIxDqAhAnSgQIQRgASgQIRhgAUABY0aoFYOCzBWgCcAF4AIABf4gBf5IBAzAuMZgBAKABAaABArABCsABAQ&sclient=gws-wiz',
+    Disease: 'Conjunctivitis',
+    Link: 'https://www.mayoclinic.org/diseases-conditions/pink-eye/symptoms-causes/syc-20376355',
     Symtomps: [
       'redness, itching, tearing, burning sensation',
       'pus-like discharge and/or crusting of the eyelids',
@@ -31,7 +35,7 @@ let diseases = [
   },
   {
     Disease: 'Diarrhea',
-    Link: 'https://www.google.com/search?q=Diarrhea&bih=663&biw=1366&hl=en&sxsrf=ALiCzsb5FOCR5TYb1zS0OmIvCXQn1Y_zyA%3A1654783650652&source=hp&ei=ov6hYv6LJu_L2roPxdWiiA4&iflsig=AJiK0e8AAAAAYqIMsnGLleL4aRjZ5aEUeXK0eOuBPSva&ved=0ahUKEwj-5LO9xaD4AhXvpVYBHcWqCOEQ4dUDCAc&uact=5&oq=Diarrhea&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEJECMgUIABCRAjIFCAAQkQIyDQgAEIAEEIcCELEDEBQyCAgAEIAEELEDMggIABCABBCxAzIFCAAQgAQyBQgAEIAEMgUIABCABDoHCCMQ6gIQJ1CzBFizBGDrCmgBcAB4AIABaYgBaZIBAzAuMZgBAKABAqABAbABCg&sclient=gws-wiz',
+    Link: 'https://www.mayoclinic.org/symptoms/diarrhea/basics/causes/sym-20050926',
     Symtomps: [
       'watery, loose stools',
       'frequent bowel movements',
@@ -40,13 +44,8 @@ let diseases = [
     ],
   },
   {
-    Disease: 'Headaches',
-    Link: 'https://www.google.com/search?q=Diarrhea&sxsrf=ALiCzsaUbvV8WCkLdemeLbPDbagFhWK3ww%3A1654784488546&ei=6AGiYseFIfql1e8PoMqNwAQ&ved=0ahUKEwjHmfrMyKD4AhX6UvUHHSBlA0gQ4dUDCA4&uact=5&oq=Diarrhea&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyBQgAEJECMgQIABBDMggIABCxAxCRAjIHCAAQsQMQQzIFCAAQkQIyBAgAEEMyBAgAEEMyBQgAEIAEMggIABCABBCxA0oECEEYAEoECEYYAFAAWABg9QVoAHABeACAAYkBiAGJAZIBAzAuMZgBAKABAqABAcABAQ&sclient=gws-wiz',
-    Symtomps: ['symptoms of a migraine', 'symptoms of a tension-type headache'],
-  },
-  {
     Disease: 'Mononucleosis',
-    Link: 'https://www.google.com/search?q=mononucleosis&oq=Mononucleosis&aqs=chrome.0.35i39j0i20i263i512j0i512l8.818j0j9&sourceid=chrome&ie=UTF-8',
+    Link: 'https://www.mayoclinic.org/diseases-conditions/mononucleosis/symptoms-causes/syc-20350328',
     Symtomps: [
       'nap frequently',
       'swollen lymph glands and spleen',
@@ -58,7 +57,7 @@ let diseases = [
   },
   {
     Disease: 'Heart Attack',
-    Link: 'https://www.google.com/search?q=heart+attack&bih=663&biw=1366&hl=en&sxsrf=ALiCzsYf51oo57_wPhRTGx30UX1XrZ15Lg%3A1654785825573&ei=IQeiYsbCIpL2-QaQg5mgBw&ved=0ahUKEwiG17_KzaD4AhUSe94KHZBBBnQQ4dUDCA4&uact=5&oq=heart+attack&gs_lcp=Cgdnd3Mtd2l6EAMyBwgAELEDEEMyDQgAEIAEEIcCELEDEBQyBAgAEEMyCggAEIAEEIcCEBQyCAgAEIAEELEDMggIABCABBCxAzIICAAQgAQQsQMyBQgAEIAEMgUIABCABDIFCAAQgAQ6BAgjECc6CAgAELEDEIMBOg4ILhCxAxCDARDHARCjAjoKCC4QsQMQ1AIQQzoHCC4Q1AIQQzoHCAAQgAQQCkoECEEYAEoECEYYAFAAWP8LYLgOaABwAXgAgAHcAYgBuAuSAQU1LjUuMpgBAKABAcABAQ&sclient=gws-wiz',
+    Link: 'https://www.mayoclinic.org/diseases-conditions/heart-attack/symptoms-causes/syc-20373106',
     Symtomps: [
       'pain',
       'pressure',
@@ -69,7 +68,7 @@ let diseases = [
   },
   {
     Disease: 'Stroke',
-    Link: 'https://www.google.com/search?q=Stroke&bih=663&biw=1366&hl=en&sxsrf=ALiCzsbB1_r1EeOyHoQxPJniE47dGUFTaQ%3A1654786747609&ei=uwqiYsXoJJSDoATZvZqwDA&ved=0ahUKEwiFspSC0aD4AhWUAYgKHdmeBsYQ4dUDCA4&uact=5&oq=Stroke&gs_lcp=Cgdnd3Mtd2l6EAMyBwgAELEDEEMyBwgAELEDEEMyCggAELEDEIMBEEMyBAgAEEMyBwgAELEDEEMyBwgAELEDEEMyBAgAEEMyBAgAEEMyBAgAEEMyBAgAEENKBAhBGABKBAhGGABQAFgAYO0GaABwAXgAgAGdAogBnQKSAQMyLTGYAQCgAQKgAQHAAQE&sclient=gws-wiz',
+    Link: 'https://www.mayoclinic.org/diseases-conditions/stroke/symptoms-causes/syc-20350113',
     Symtomps: [
       'facial drooping',
       'arm weakness',
@@ -80,21 +79,171 @@ let diseases = [
     ],
   },
   {
-    Disease: 'Breast Problems',
-    Link: 'https://www.google.com/search?q=Breast+Problems&bih=663&biw=1366&hl=en&sxsrf=ALiCzsbCOLGuxXo55J5OCgYWb_9UfA8D8g%3A1654787042390&ei=4guiYouzF5Sx2roP_fGDkA4&ved=0ahUKEwiLrNyO0qD4AhWUmFYBHf34AOIQ4dUDCA4&uact=5&oq=Breast+Problems&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgoIABCABBCHAhAUMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgARKBAhBGABKBAhGGABQAFgAYMAHaABwAXgAgAGiAogBogKSAQMyLTGYAQCgAQKgAQHAAQE&sclient=gws-wiz',
+    Disease: 'Breast cancer',
+    Link: 'https://www.mayoclinic.org/diseases-conditions/breast-cancer/symptoms-causes/syc-20352470',
     Symtomps: [
-      'nipple discharge',
-      'unusual breast tenderness',
-      'nipple skin changes',
+      'redness or pitting of the skin over your breast',
+      'a newly inverted nipple',
+      'a breast lump',
     ],
   },
   {
-    Disease: 'Skin Problems',
-    Link: 'https://www.google.com/search?q=Skin+Problems&bih=663&biw=1366&hl=en&sxsrf=ALiCzsZEMbhQQpf_6hUkk5Q6aLywFlUaBQ%3A1654787452206&ei=fA2iYriQDMXN2roPr8WqkA4&ved=0ahUKEwi4vpHS06D4AhXFplYBHa-iCuIQ4dUDCA4&uact=5&oq=Skin+Problems&gs_lcp=Cgdnd3Mtd2l6EAMyCAgAELEDEJECMgUIABCRAjIECAAQQzIFCAAQgAQyBQgAEIAEMgQIABBDMgUIABCABDIECAAQQzIFCAAQgAQyBQgAEIAESgQIQRgASgQIRhgAUABYAGDtBWgAcAF4AIABpwKIAacCkgEDMi0xmAEAoAECoAEBwAEB&sclient=gws-wiz',
+    Disease: "Addison's disease",
+    Link: 'https://www.mayoclinic.org/diseases-conditions/addisons-disease/doctors-departments/ddc-20350298',
     Symtomps: [
-      'frequent flushing and redness of the face and neck',
-      'jaundice',
-      'new growths or moles',
+      'fatigue',
+      'muscle weakness',
+      'low mood',
+      'loss of appetite and unintentional weight loss',
+      'increased thirst',
+    ],
+  },
+  {
+    Disease: 'Allergic rhinitis',
+    Link: 'https://www.mayoclinic.org/departments-centers/allergic-rhinitis-specialty-group/overview/ovc-20485381',
+    Symtomps: [
+      'cold-like symptoms',
+      'itchiness',
+      'sneezing',
+      'blocked or runny nose',
+    ],
+  },
+  {
+    Disease: "Alzheimer's disease",
+    Link: 'https://www.mayoclinic.org/diseases-conditions/alzheimers-disease/symptoms-causes/syc-20350447',
+    Symtomps: [
+      'confusion',
+      'difficulty planning or making decisions',
+      'problems with speech and language',
+      'problems moving around',
+      'personality changes',
+      'hallucinations',
+      'low mood',
+    ],
+  },
+  {
+    Disease: 'Anxiety',
+    Link: 'https://www.mayoclinic.org/diseases-conditions/anxiety/symptoms-causes/syc-20350961',
+    Symtomps: ['having trouble concentrating or sleeping', 'feeling restless'],
+  },
+  {
+    Disease: 'Asbestosis',
+    Link: 'https://www.mayoclinic.org/diseases-conditions/asbestosis/symptoms-causes/syc-20354637',
+    Symtomps: [
+      'shortness of breath',
+      'a persistent cough',
+      'wheezing',
+      'fatigue',
+      'chest pain',
+      'clubbed fingertips',
+    ],
+  },
+  {
+    Disease: 'Asthma',
+    Link: 'https://www.mayoclinic.org/diseases-conditions/asthma/symptoms-causes/syc-20369653',
+    Symtomps: ['coughing', 'wheezing', 'chest tightness', 'breathlessness'],
+  },
+  {
+    Disease: 'Acute lymphoblastic leukaemia',
+    Link: 'https://www.mayoclinic.org/diseases-conditions/acute-lymphocytic-leukemia/symptoms-causes/syc-20369077',
+    Symtomps: [
+      'pale skin',
+      'tiredness',
+      'breathlessness',
+      'having repeated infections over a short space of time',
+      'unusual and frequent bleeding',
+    ],
+  },
+  {
+    Disease: 'Benign prostate enlargement',
+    Link: 'https://www.mayoclinic.org/diseases-conditions/benign-prostatic-hyperplasia/symptoms-causes/syc-20370087',
+    Symtomps: [
+      'difficulty starting urination',
+      'a frequent need to urinate',
+      'difficulty fully emptying the bladder',
+    ],
+  },
+  {
+    Disease: 'Bile duct cancer',
+    Link: 'https://www.mayoclinic.org/diseases-conditions/cholangiocarcinoma/symptoms-causes/syc-20352408',
+    Symtomps: ['jaundice', 'unintentional weight loss', 'abdominal pain'],
+  },
+  {
+    Disease: 'Brain tumours',
+    Link: 'https://www.mayoclinic.org/diseases-conditions/pediatric-brain-tumor/symptoms-causes/syc-20361694',
+    Symtomps: [
+      'severe, persistent headaches',
+      'seizures',
+      'persistent nausea, vomiting and drowsiness',
+      'mental or behavioural changes',
+      'progressive weakness or paralysis on one side of the body',
+    ],
+  },
+  {
+    Disease: 'Bipolar disorder',
+    Link: 'https://www.mayoclinic.org/diseases-conditions/bipolar-disorder/symptoms-causes/syc-20355955',
+    Symtomps: ['depression', 'mania'],
+  },
+  {
+    Disease: 'Bladder cancer',
+    Link: 'https://www.mayoclinic.org/diseases-conditions/bladder-cancer/symptoms-causes/syc-20356104',
+    Symtomps: ['blood in urine'],
+  },
+  {
+    Disease: 'Bone cancer',
+    Link: 'https://www.mayoclinic.org/diseases-conditions/bone-cancer/symptoms-causes/syc-20350217',
+    Symtomps: [
+      'persistent bone pain',
+      'swelling and redness over the bone',
+      'a noticeable lump over the bone',
+      'a weak bone that breaks more easily than normal',
+    ],
+  },
+  {
+    Disease: 'Bowel cancer',
+    Link: 'https://www.mayoclinic.org/diseases-conditions/small-bowel-cancer/symptoms-causes/syc-20352497',
+    Symtomps: [
+      'a persistent change in bowel',
+      'blood in the stools',
+      'abdominal pain',
+    ],
+  },
+  {
+    Disease: 'Bronchitis',
+    Link: 'https://www.mayoclinic.org/diseases-conditions/bronchitis/symptoms-causes/syc-20355566',
+    Symtomps: [
+      'cough is severe or lasts longer than three weeks',
+      'cough up mucus streaked with blood',
+      'constant fever',
+    ],
+  },
+  {
+    Disease: 'Bronchiectasis',
+    Link: 'https://www.mayoclinic.org/departments-centers/mycobacterial-and-bronchiectasis-clinic/overview/ovc-20398963',
+    Symtomps: ['persistent cough', 'breathlessness'],
+  },
+  {
+    Disease: 'Bunion',
+    Link: 'https://www.mayoclinic.org/diseases-conditions/bunions/symptoms-causes/syc-20354799',
+    Symtomps: [
+      'pain and stiffness of the big toe joint',
+      'swelling of the big toe joint',
+      'difficulty walking',
+      'arthritis in the big toe',
     ],
   },
 ]
+
+/*
+
+
+{
+  Disease: '',
+  Link: '',
+  Symtomps: [
+    '',
+  ],
+},
+
+
+*/
